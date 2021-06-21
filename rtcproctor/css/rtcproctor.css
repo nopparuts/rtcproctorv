@@ -1,0 +1,92 @@
+.media-container {
+    min-width:50% !important;
+/*    width:60% !important; */
+}
+body {
+    font-family: sans-serif;
+}
+h1 {
+    top: 0;
+    background-color:dimgray;
+    text-align:center;
+    color:whitesmoke;
+    margin:0px;
+    padding:10px;
+    font-size:15px;
+}
+
+.main-container {
+    margin:auto;
+    width: 80%; /* The width is 60%, by default */
+    padding: 10px;
+}
+
+#selectcam {
+  width: 30%; /* The width is 60%, by default */
+  padding: 10px 5px;    
+  margin-bottom:10px;
+  background-color:white;
+}
+.input-box {
+    float:left;
+    width: 60%; /* The width is 60%, by default */
+    padding: 10px 5px;
+}
+
+.button-box {
+  float:left;
+  margin-bottom:10px;
+  padding:10px 5px;
+}  
+
+#stream-code {
+  width: 60%; /* The width is 60%, by default */
+  padding: 10px 10px;
+}
+
+
+#videos-container {
+  width: 100%; /* The width is 60%, by default */
+  margin-top:10px;
+  padding:5px;
+}    
+
+.btn {
+  margin-right:10px;
+  padding: 10px 10px;
+  min-width:50px;
+  background-color:white;
+  color:black;
+  border-width:thin;
+  border-color:black;
+  border-radius: 2px;
+  transition-duration: 0.2s;
+}        
+
+
+.btn:hover {
+  background-color:darkgray; /* Green */
+  color: white;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .main-container  {
+      width:100%;
+  }
+  #stream-code {
+      width: 60%;
+  }
+  #selectcam {
+      width: 30%;
+  }
+  #videos-container {
+      width: 95%;
+  }
+  .button-box, .input-box  {
+      width: 90%; 
+  }
+  .media-container {
+    min-width:50% !important;
+  }
+}
