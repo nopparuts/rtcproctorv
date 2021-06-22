@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die('Direct access to this script is forbidden.');
 
 $plugin->component = 'mod_rtcproctorv';
-$plugin->version   = 2021030600; // The current module version (Date: YYYYMMDDXX).
+$plugin->version   = 2021030700; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires  = 2020053000; // Requires this Moodle version (3.10).
 // $plugin->cron      = 0; // Period for cron to check this module (secs).
 

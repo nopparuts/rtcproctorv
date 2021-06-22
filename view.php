@@ -65,12 +65,18 @@ $allowedit  = has_capability('mod/rtcproctorv:edit', $context);
 $allowview  = has_capability('mod/rtcproctorv:view', $context);
 
 $out = "";
+
+function cmp($a, $b) {
+    return strcmp($a->email, $b->email);
+}
+
 if ($allowedit) {
 //    echo("<br><br><br>Teacher<br><br><br>");
     echo("<script src='./copy-cilpboard.js'></script>");
     $course_context = context_course::instance($course->id);
     $students = get_role_users(5 , $course_context);
     $conf_room = $students;
+    usort($conf_room, "cmp");
     $table = new html_table();
     $table->id = "student-list";
     $table->head = array('Student ID','Passcode');
